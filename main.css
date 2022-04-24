@@ -39,6 +39,8 @@ button{
 }
 
 #stream-controls{
+  position: fixed;
+  bottom: 50px;
     display: none;
     justify-content: center;
     margin-top:0.5em;
