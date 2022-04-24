@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>VideoCall Room</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ivy Streams</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
-
 <body>
-  <div id="user.cam">
-    <video autoplay="true" id="user_camlive"></video>
-  </div>
-  <div id="peer.cam">
-    <video autoplay="true" id="peer_camlive"></video>
-  </div>
+  <center><button id="join-btn"><ion-icon class="icons" name="power"></ion-icon></button></center>
+
+    <div id="stream-wrapper">
+        <div id="video-streams"></div>
+
+        <div id="stream-controls">
+            <button id="leave-btn"><ion-icon class="iconsmi" name="call"></ion-icon></button>
+            <button id="mic-btn"><ion-icon class="iconsmi" name="mic"></ion-icon></button>
+            <button id="camera-btn"><ion-icon class="iconsmi" name="camera"></ion-icon></button>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script> -->
+    <script src="AgoraRTC_N-4.7.3.js"></script>
+    <script src='main.js'></script>
+
 </body>
-<script src="script.js"></script>
 </html>
