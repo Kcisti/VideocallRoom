@@ -11,21 +11,21 @@ body {
 }
 
 .copy {
-  font-size: 35px;
+  font-size: 25px;
   color:#343A90;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
 }
 
 video {
   width:95%;
-  height: 50%;
+  height: 400px;
   margin-bottom: 5%;
   -webkit-transform:scaleX(-1);
   transform:scaleX(-1);
   border-radius: 10px;
   padding: 0;
-  border: 5px solid #343A90;
+  border: 2px solid #343A90;
 }
