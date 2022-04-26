@@ -13,19 +13,31 @@ body {
 .copy {
   font-size: 25px;
   color:#343A90;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
   font-weight: 700;
 }
 
-video {
+#remoteVideo{
   width:95%;
-  height: 400px;
+  height: 100%;
+  max-height: 500px;
   margin-bottom: 5%;
   -webkit-transform:scaleX(-1);
   transform:scaleX(-1);
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 0;
-  border: 2px solid #343A90;
+  border: 1px solid #343A90;
+}
+#localVideo{
+  position: fixed;bottom: 5px;right: 5px;
+  width:140px;
+  max-height: 140px;
+  margin-bottom: 5%;
+  -webkit-transform:scaleX(-1);
+  transform:scaleX(-1);
+  border-radius: 5px;
+  padding: 0;
+  border: 1px solid #343A90;
 }
