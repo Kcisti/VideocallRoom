@@ -34,7 +34,8 @@ body {
 #localVideo{
   position: fixed;bottom: 5px;right: 5px;
   width:100px;
-  max-height: 140px;
+  max-width: 130px;
+  height: 130px;
   margin-bottom: 5%;
   background-color: #000000;
   -webkit-transform:scaleX(-1);
