@@ -2,28 +2,21 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width">
     <title>Tha Streams</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
 <body>
-  <center><button id="join-btn"><ion-icon class="icons" name="power"></ion-icon></button></center>
-  <center>
-    <div id="stream-wrapper">
-        <div id="video-streams"></div>
-
-        <div id="stream-controls">
-            <button id="leave-btn"><ion-icon class="iconsmi" name="call"></ion-icon></button>
-            <button id="mic-btn"><ion-icon class="iconsmi" name="mic"></ion-icon></button>
-            <button id="camera-btn"><ion-icon class="iconsmi" name="camera"></ion-icon></button>
-        </div>
-    </div>
-  </center>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!-- <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script> -->
-    <script src="AgoraRTC_N-4.7.3.js"></script>
-    <script src='main.js'></script>
-
+  <div class="copy">Send your URL to a friend to start a video call</div>
+  <center><div class="videoContainer">
+    <video id="remoteVideo" autoplay></video>
+    <video id="localVideo" autoplay muted></video>
+  </div></center>
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script> -->
 </body>
 </html>
