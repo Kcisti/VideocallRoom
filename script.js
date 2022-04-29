@@ -117,3 +117,13 @@ function localDescCreated(desc) {
     onError
   );
 }
+
+//ma part
+jQuery('#stopCall').click(function(){
+  window.close();
+})
+
+jQuery('#speakerPhoneOne').click(function(){
+  document.getElementById('remoteVideo').volume=1;
+  
+})
