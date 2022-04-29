@@ -119,11 +119,32 @@ function localDescCreated(desc) {
 }
 
 //ma part
+document.getElementById('remoteVideo').volume=0.7;
+document.getElementById("speakerPhoneTwo").style.display="none";
+document.getElementById("mutedTwo").style.display="none";
+
 jQuery('#stopCall').click(function(){
   window.close();
 })
 
 jQuery('#speakerPhoneOne').click(function(){
   document.getElementById('remoteVideo').volume=1;
-  
+  document.getElementById("speakerPhoneTwo").style.display="inline-block";
+  document.getElementById("speakerPhoneOne").style.display="none";
+})
+jQuery('#speakerPhoneTwo').click(function(){
+  document.getElementById('remoteVideo').volume=0.7;
+  document.getElementById("speakerPhoneTwo").style.display="none";
+  document.getElementById("speakerPhoneOne").style.display="inline-block";
+})
+
+jQuery('#mutedOne').click(function(){
+  document.getElementById('localVideo').volume=0;
+  document.getElementById("mutedTwo").style.display="inline-block";
+  document.getElementById("mutedOne").style.display="none";
+})
+jQuery('#mutedTwo').click(function(){
+  document.getElementById('localVideo').volume=0.7;
+  document.getElementById("mutedTwo").style.display="none";
+  document.getElementById("mutedOne").style.display="inline-block";
 })
